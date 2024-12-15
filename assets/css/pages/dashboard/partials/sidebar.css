@@ -9,7 +9,7 @@
 }
 
 .container-logo {
-    display: flex;
+    //display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -20,24 +20,20 @@
     gap: 0.1rem;
     width: 100%;
     margin-top: 2rem;
+    height: 82vh;
 }
 
-.nave-links a{
+.nave-links a, .logout a{
     font-size: 24px;
     color: var(--black);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     width: 100%;
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.nave-links a{
     border-radius: 12px;
-    transition: color, background-color, fill;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
     transition-timing-function: ease;
 }
+
 
 .nave-links li .select:hover{
     color: var(--white);
@@ -49,7 +45,7 @@
     filter: invert(100%);
 }
 
-.nave-links li .now .icon{
+.nave-links li .now .icon, .logout li .container-user a:hover{
     transition-duration: .3s;
     filter: invert(100%);
 }
@@ -57,4 +53,34 @@
 .nave-links li .now{
     color: var(--white);
     background-color: var(--black);
+}
+
+.logout li .container-user{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.logout li .container-user a{
+    display: grid;
+    place-items: center;
+}
+
+.logout li .container-user a:hover {
+    transition-duration: 0.3s;
+    background-color: rgb(255, 255, 255);
+}
+
+.logout li .container-user .user-content {
+    background-color: red;
+    font-family: fontBold;
+    align-self: center;
+    white-space: nowrap
+}
+
+.logout li .container-user .user-content .user-name{
+    font-size: 24px;
+}
+
+.logout li .container-user .user-content .user-email{
+    font-size: 12px;
 }
