@@ -1,0 +1,73 @@
+.bg-main{
+    background-color: var(--main_bg_green);
+    padding: 1rem;
+    width: 100%;
+}
+
+.main-content{
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+.container-bem-vindo h1{
+    font-family: fontBold;
+    font-size: 20px;
+}
+
+.container-bem-vindo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-operacoes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.btn-add-compra, .btn-add-venda{
+    font-size: 16px;
+    font-family: fontBold;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: solid 1px var(--green_model);
+    border-radius: 12px;
+    transition-property: background-color, color;
+    transition: 0.3s;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+.btn-add-compra{
+    color: var(--white);
+    background-color: var(--green_model);
+}
+
+.btn-add-compra:hover{
+    background-color: transparent;
+    color: var(--green_model);
+}
+
+.btn-add-compra:hover .cart_icon{
+    fill: var(--green_model);
+}
+
+.btn-add-venda{
+    color: var(--green_model);
+    background: transparent;
+}
+
+.btn-add-venda:hover{
+    color: var(--white);
+    background: var(--green_model);
+}
+
+.btn-add-venda:hover .tag_icon{
+    fill: var(--white);
+}
