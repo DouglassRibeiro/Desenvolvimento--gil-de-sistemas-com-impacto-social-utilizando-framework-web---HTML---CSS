@@ -71,7 +71,7 @@
                 </div>
                 <div class="container-operacoes">
                     <div class="box-btn-adicionar-compra">
-                        <button class="btn-add-compra" id="opemModelCompra">
+                        <button class="btn-add-compra" id="openModelCompra">
                             <svg width="25" height="25" viewBox="0 0 25 25" fill="white" class='cart_icon'
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -81,7 +81,7 @@
                         </button>
                     </div>
                     <div class="box-btn-adiconar-venda">
-                        <button class="btn-add-venda" id="opemModelVenda">
+                        <button class="btn-add-venda" id="openModelVenda">
                             <svg width="25" height="25" viewBox="0 0 25 25" fill="#00671F" class="tag_icon"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -90,39 +90,41 @@
                             <span>Vender Ação.</span>
                         </button>
                     </div>
-                    <div id="modelCompra" class="model">
+                    <div id="modalCompra" class="modal">
                         <div class="popup_compra">
-                            <img src="/assets/imgs/cart_vetor.svg" alt="Carrinho de compra">
-                            <span>Compra ação</span>
-                        </div>
-                        <form action="" id="formCompra">
-                            <label for="nome_acao">Nome da ação</label>
-                            <input type="text" id="nome_acao" name="nome_acao" required>
-
-                            <label for="setor_acao">Setor</label>
-                            <input type="text" id="setor_acao" name="setor_acao" required>
-
-                            <label for="categoria_acao">Categoria</label>
-                            <input type="text" id="categoria_acao" name="categoria_acao" required>
-
-                            <label for="valor_unitario">Valor Unitário</label>
-                            <input type="number" id="valor_unitario" step="0.01" placeholder="Ex: 4.50" name="valor_unitario" required>
-
-                            <label for="quantidade_total">Quantidade</label>
-                            <input type="number" id="quantidade_total" name="quantidade_total" required>
-<!--ctrl D seleção-->
-                            <div class="btn_forms">
-                                <button class="btn_cancel_form" type="reset" id="closedModelBtnCompra">Cancelar</button>
-                                <button class="btn_cancel_form" type="submit">Finalizar</button>
+                            <div class="popup_titulo_compra">
+                                <img src="/assets/imgs/cart_vetor.svg" alt="Carrinho de compra">
+                                <span>Compra ação</span>
                             </div>
-                        </form>
+                        
+                            <form action="" id="formCompra">
+                                <label for="nome_acao">Nome da ação</label>
+                                <input type="text" id="nome_acao" name="nome_acao" required>
 
-                        <div id="modalVenda" class="modal">
-                            <div class="popup_venda">
-                                <div class="popup_titulo_venda">
-                                    <img src="/assets/imgs/tag_vetor_white.svg" alt="Tag icon">
-                                    <span>Vender ação</span>
+                                <label for="setor_acao">Setor</label>
+                                <input type="text" id="setor_acao" name="setor_acao" required>
+
+                                <label for="categoria_acao">Categoria</label>
+                                <input type="text" id="categoria_acao" name="categoria_acao" required>
+
+                                <label for="valor_unitario">Valor Unitário</label>
+                                <input type="number" id="valor_unitario" step="0.01" placeholder="Ex: 4.50" name="valor_unitario" required>
+
+                                <label for="quantidade_total">Quantidade</label>
+                                <input type="number" id="quantidade_total" name="quantidade_total" required>
+                                <div class="btn_forms">
+                                    <button class="btn_cancel_form" type="reset" id="closedModelBtnCompra">Cancelar</button>
+                                    <button class="btn_confirme_form" type="submit">Finalizar</button>
                                 </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="modalVenda" class="modal">
+                        <div class="popup_venda">
+                            <div class="popup_titulo_venda">
+                                <img src="/assets/imgs/tag_vetor_white.svg" alt="Tag icon">
+                                <span>Vender ação</span>
+                            </div>
                             <form action="" id="formVenda">
                                 <label for="selecione_codigo">Selecione o ativo</label>
                                 <select name="selecione_codigo" id="selecione_codigo" required>
@@ -136,17 +138,20 @@
                                 <input type="number" id="quantidade_total" name="quantidade_total" required>
 
                                 <div class="btn_forms">
-                                    <button class="btn_cancel_form" type="reset" id="closedModelBtnCompra">Cancelar</button>
-                                    <button class="btn_cancel_form" type="submit">Finalizar</button>
+                                    <button class="btn_cancel_form" type="reset" id="closedModelBtnVenda">Cancelar</button>
+                                    <button class="btn_confirme_form" type="submit">Finalizar</button>
                                 </div>
                             </form>
-                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
         </main>
     </main>
+    <script src="/assets/js/popup.js"></script>
 </body>
 
 </html>
+
+    <!--ctrl D seleção-->
