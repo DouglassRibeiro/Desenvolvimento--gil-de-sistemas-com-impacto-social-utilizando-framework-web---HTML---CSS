@@ -139,3 +139,38 @@ input, select {
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
 }
+
+.box-grafico-principal {
+    display: inline-block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background-color: var(--white);
+    width: 100%;
+    height: 60%;
+    border-radius: 12px;
+    box-shadow: 2px 4px 4px 1px rgba(2, 79, 82, 0.2);
+}
+
+.box-grafico-principal .grafico {
+    background-color: var(--main_bg_green);
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.grafico .titulo-grafico {
+    font-family: fontBold;
+    background-color: var(--backgroud_green_model);
+    text-align: center;
+    color: var(--white);
+    width: fit-content;
+    padding: 0.5rem 5.5rem;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.grafico #grafico_principal {
+    width: 100%;
+    height: 90%;
+}
