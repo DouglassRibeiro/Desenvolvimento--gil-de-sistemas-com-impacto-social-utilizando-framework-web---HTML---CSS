@@ -10,6 +10,10 @@
     padding: 2rem;
     height: 100%;
     width: 100%;
+    overflow-x: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 .container-bem-vindo h1{
@@ -173,4 +177,27 @@ input, select {
 .grafico #grafico_principal {
     width: 100%;
     height: 90%;
+}
+
+.box_estatisticas {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: calc(50% - 1rem);
+}
+
+.box_estatisticas .estatistica {
+    background-color: var(--main_bg_green);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 2px 4px 4px 1px rgba(2, 79, 82, 0.2);
+    font-size: 16px;
+}
+
+.estatistica h4 {
+    font-family: fontBold;
+}
+
+.estatistica p {
+    font-family: fontRegular;
 }
